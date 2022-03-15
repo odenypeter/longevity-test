@@ -1,5 +1,6 @@
 from rest_framework import routers
-from views import SampleModelViewSet
+from .views import SampleModelViewSet
 
 router = routers.SimpleRouter()
 router.register(r'sample-model', SampleModelViewSet, basename='sample-model')
+urlpatterns = router.urls
